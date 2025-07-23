@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+    <form action="{% url 'login' %}" method="POST">
+        {% csrf_token %}
+        Usuari: <input type="text" id="username" name="username"><br>
+        Contrassenya: <input type="password" id="password" name="password"><br>
+        <input type="submit" class="" value="Entra">
+    </form>
+
+</body>
+</html>

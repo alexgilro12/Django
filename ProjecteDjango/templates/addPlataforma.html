@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>addPlataforma</title>
+</head>
+<body>
+    <form action="{% url 'addPlataforma' %}" method="POST">
+        {% csrf_token %}
+        Nom de la Plataforma: <input type="text" id="name" name="name"><br>
+        <input type="submit" class="" value="Afegir">
+    </form>
+
+</body>
+</html>
