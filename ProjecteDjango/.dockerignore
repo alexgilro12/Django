@@ -1,0 +1,27 @@
+# Entornos virtuales
+venv
+env
+.venv
+
+# Archivos de Python generados
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Archivos de configuración del editor
+.vscode/
+.idea/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos temporales
+*.log
+*.tmp
+*.bak
+
+# Base de datos SQLite local (si no quieres incluirla en la imagen)
+*.sqlite3
+db.sqlite3

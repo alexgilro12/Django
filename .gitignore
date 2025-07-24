@@ -1,5 +1,7 @@
 # Ignorar entorno virtual
 venv/
+env/
+ENV/
 
 # Archivos y carpetas de Python
 __pycache__/
@@ -39,3 +41,23 @@ desktop.ini
 build/
 dist/
 *.egg-info/
+
+# Docker
+docker-compose.override.yml
+**/__pycache__/
+
+# Pipenv
+Pipfile.lock
+
+# pytest cache
+.pytest_cache/
+
+# Coverage reports
+htmlcov/
+.coverage
+
+# MyPy
+.mypy_cache/
+
+# VS Code
+.history/

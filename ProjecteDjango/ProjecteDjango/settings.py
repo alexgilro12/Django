@@ -78,13 +78,15 @@ WSGI_APPLICATION = 'ProjecteDjango.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+import os
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'djangovideojocs',
-        'USER': 'root',
-        'PASSWORD': 'super3',
-        'HOST': 'localhost',
+        'NAME': os.getenv('DB_NAME'),  #se encuentra en el archivo .env
+        'USER': os.getenv('DB_USER'),
+        'PASSWORD': os.getenv('DB_PASSWORD'),
+        'HOST': os.getenv('DB_HOST'),  # Use 'host.docker.internal' to connect to the host machine
         'PORT': '3306',
     }
 }
